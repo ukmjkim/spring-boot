@@ -1,0 +1,26 @@
+logging:
+ level:
+   org.springframework: DEBUG
+   org.springframework.web.servlet: DEBUG
+  
+spring:
+  profiles:
+    active: "dev"
+
+---
+spring:
+  profiles: dev
+
+basic:
+  value: true
+  message: Welcome to the site in dev
+  number: 99
+
+---
+spring:
+  profiles: prod
+
+basic:
+  value: true
+  message: Welcome to the site in production
+  number: 99
